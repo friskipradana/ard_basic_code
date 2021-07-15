@@ -1,11 +1,12 @@
-//Board ESP32 DEV MODULE
+//Board DOIT ESP32 DEVKIT V1
 
 #include "BluetoothSerial.h" 
+#define LED_BUILTIN 2 
 
 BluetoothSerial ESP_BT; //Object for Bluetooth
 
 int incoming;
-int LED_BUILTIN = 2;
+
 
 void setup() {
   Serial.begin(9600); //Start Serial monitor in 9600
