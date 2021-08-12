@@ -10,7 +10,7 @@ void setup() {
   // set up the LCD's number of columns and rows:
   lcd.begin(16, 2);
 
-  myRTC.setDS1302Time(00, 55, 8, 3, 10, 07, 2021);
+ // myRTC.setDS1302Time(00, 38, 23, 3, 8, 8, 2021);
   Serial.begin(9600);
 
 }

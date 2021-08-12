@@ -1,9 +1,9 @@
-const int buzzer = 13; //buzzer to arduino pin 13
+const int buzzer = 3; //buzzer to arduino pin 13
 
 void setup(){
   
   pinMode(buzzer, OUTPUT); // Set buzzer - pin 7 as an output
-  Serial.begin(9600);
+//  Serial.begin(9600);
 
 }
 
