@@ -60,5 +60,5 @@ void loop () {
     lcd.print(now.second(), DEC);
   lcd.print(" ");
     
-    delay(15000);
+    delay(1000);
 }

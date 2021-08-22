@@ -1,4 +1,4 @@
-#define LEDRPWM 3 //Analog Pin ARD UNO
+#define LEDRPWM 10 //PWM PIN
 int i = 0;
 
 
