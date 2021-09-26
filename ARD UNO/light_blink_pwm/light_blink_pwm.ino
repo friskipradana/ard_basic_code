@@ -1,4 +1,4 @@
-#define LEDRPWM 10 //PWM PIN
+#define LEDRPWM 3 //PWM PIN
 int i = 0;
 
 
