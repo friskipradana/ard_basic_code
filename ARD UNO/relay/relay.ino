@@ -1,4 +1,4 @@
-#define pin A1
+#define pin 4
  
 void setup(){
 pinMode(pin, OUTPUT);

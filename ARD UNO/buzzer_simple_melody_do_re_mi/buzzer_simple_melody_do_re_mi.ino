@@ -1,4 +1,4 @@
-#define BUZZER_PIN 13
+#define BUZZER_PIN 8
 
 void setup() {
   //DO, RE, MI, FA, SOL, LA, SI, DO

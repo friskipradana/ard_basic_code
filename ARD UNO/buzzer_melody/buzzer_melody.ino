@@ -90,7 +90,7 @@
 #define NOTE_DS8 4978
 
 
-#define BUZZER_PIN 1
+#define BUZZER_PIN 9
 
 // Array with the notes in the melody (see pitches.h for reference)
 int melody[] = {NOTE_A4, NOTE_A4, NOTE_A4, NOTE_F4, NOTE_C5, NOTE_A4, NOTE_F4, NOTE_C5, NOTE_A4, NOTE_E5, NOTE_E5, NOTE_E5, NOTE_F5, NOTE_C5, NOTE_A4, NOTE_F4, NOTE_C5, NOTE_A4};
@@ -104,12 +104,14 @@ int tempo = 120; // tempo for the melody expressed in beats per minute (BPM)
 void setup() {
   // put your setup code here, to run once:
   pinMode(BUZZER_PIN, OUTPUT);
-  playTune(melody, durations, tempo);
+ 
 //  Serial.begin(9600);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+   playTune(melody, durations, tempo);
+   delay(500);
 
 }
 void playTune(int notes[], int durations[], int BPM)
