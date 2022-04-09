@@ -1,4 +1,4 @@
-#define pin 2
+#define pin 4
  
 void setup(){
 pinMode(pin, OUTPUT);
@@ -6,8 +6,8 @@ pinMode(pin, OUTPUT);
  
 void loop() {
 digitalWrite(pin, HIGH);
-delay(5000);
+delay(15000);
 digitalWrite(pin, LOW);
-delay(5000);
+delay(15000);
 }
  

@@ -8,8 +8,8 @@ char keys[rows][cols] = {
   {'.', '*', '/', '='}
 
 };
-byte rowPins[rows] = {12, 13, 25, 32};
-byte colPins[cols] = {14, 27, 26, 33};
+byte rowPins[rows] = {A3, A2, A1, A0};
+byte colPins[cols] = {5, 6, 7, 8};
 Keypad keypad = Keypad(makeKeymap(keys), rowPins, colPins, rows, cols);
 
 

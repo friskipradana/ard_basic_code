@@ -10,6 +10,6 @@ void setup(){
 void loop(){
   Myservo.write(0);
   delay(1000);
-  Myservo.write(180);
+  Myservo.write(360);
   delay(1000);
 }
