@@ -1,4 +1,4 @@
-#define LED 11
+#define LED 13
 byte ldr = A0;
 int value;
 
@@ -18,7 +18,7 @@ void loop() {
 
   if (value < 800) {
     digitalWrite(LED, HIGH);
-    delay(5000);
+    delay(100);
   } else {
     digitalWrite(LED, LOW);
     delay(200);

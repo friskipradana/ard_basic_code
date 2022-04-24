@@ -1,0 +1,26 @@
+/**
+ * Made with Marlin Bitmap Converter
+ * https://marlinfw.org/tools/u8glib/converter.html
+ *
+ * This bitmap from the file 'rext-out-14.jpg'
+ */
+#pragma once
+
+#define Y1HJ82_BMPWIDTH  14
+
+const unsigned char bitmap_y1hj82[] PROGMEM = {
+  B11111111,B11111100,
+  B10000000,B00000100,
+  B10000000,B00000100,
+  B10000000,B00000100,
+  B10000000,B00000100,
+  B10000000,B00000100,
+  B10000000,B00000100,
+  B10000000,B00000100,
+  B10000000,B00000100,
+  B10000000,B00000100,
+  B10000000,B00000100,
+  B10000000,B00000100,
+  B10000000,B00000100,
+  B11111111,B11111100
+};

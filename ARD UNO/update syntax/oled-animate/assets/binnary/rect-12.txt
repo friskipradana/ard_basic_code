@@ -1,0 +1,24 @@
+/**
+ * Made with Marlin Bitmap Converter
+ * https://marlinfw.org/tools/u8glib/converter.html
+ *
+ * This bitmap from the file 'rext-12.jpg'
+ */
+#pragma once
+
+#define JHLZ5E_BMPWIDTH  12
+
+const unsigned char bitmap_jhlz5e[] PROGMEM = {
+  B11111111,B11110000,
+  B11111111,B11110000,
+  B11111111,B11110000,
+  B11111111,B11110000,
+  B11111111,B11110000,
+  B11111111,B11110000,
+  B11111111,B11110000,
+  B11111111,B11110000,
+  B11111111,B11110000,
+  B11111111,B11110000,
+  B11111111,B11110000,
+  B11111111,B11110000
+};

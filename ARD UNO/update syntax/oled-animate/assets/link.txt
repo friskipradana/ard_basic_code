@@ -3,3 +3,4 @@ https://ezgif.com/split
 https://convertio.co/png-xbm/
 https://www.freefileconvert.com/
 https://redketchup.io/gif-resizer
+https://marlinfw.org/tools/u8glib/converter.html
