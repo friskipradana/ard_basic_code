@@ -4,7 +4,7 @@ virtuabotixRTC myRTC(6, 7, 8); //CLK, DAT, RST
 
 void setup() {
 Serial.begin(9600); 
-//myRTC.setDS1302Time(00, 35, 16, 3, 14, 02, 2018); 
+//myRTC.setDS1302Time(00, 9, 19, 00, 06, 05, 2022); 
 }
 
 void loop() {
