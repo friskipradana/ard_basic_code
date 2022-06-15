@@ -3,8 +3,8 @@
 #define SD_ChipSelectPin 10  //using digital pin 4 on arduino nano 328, can use other pins
 #include <TMRpcm.h>           //  also need to include this library...
 #include <SPI.h>
-#define BTN1 A3
-#define BTN2 A2
+#define BTN1 2
+#define BTN2 3
 #define BTN3 7
 
 TMRpcm tmrpcm;   // create an object for use in this sketch
@@ -40,13 +40,13 @@ void setup() {
 
 void loop() {
   if (digitalRead(BTN1) == 1 && !tmrpcm.isPlaying()) {
-    tmrpcm.play("letme.wav"); //the sound file "music" will play each time the arduino powers up, or is reset;
+    tmrpcm.play("satu.wav"); //the sound file "music" will play each time the arduino powers up, or is reset;
   }
   if (digitalRead(BTN2) == 1 && !tmrpcm.isPlaying()) {
-    tmrpcm.play("disco.wav"); //the sound file "music" will play each time the arduino powers up, or is reset;
+    tmrpcm.play("dua.wav"); //the sound file "music" will play each time the arduino powers up, or is reset;
   }
   if (digitalRead(BTN3) == 1 && !tmrpcm.isPlaying()) {
-    tmrpcm.play("special.wav"); //the sound file "music" will play each time the arduino powers up, or is reset;
+    tmrpcm.play("tiga.wav"); //the sound file "music" will play each time the arduino powers up, or is reset;
   }
 
 
@@ -57,27 +57,6 @@ void loop() {
   } else if (millis() - time > 500) {
     digitalWrite(13, !digitalRead(13));
     time = millis();
-  }
-
-
-  if (Serial.available()) {
-    switch (Serial.read()) {
-      case 'd': tmrpcm.play("disco.wav"); break;
-      case 'c': tmrpcm.play("crazy.wav"); break;
-      case 'e': tmrpcm.play("entertrainer.wav"); break;
-      case 'l': tmrpcm.play("letme.wav"); break;
-      case 's': tmrpcm.play("special.wav"); break;
-      case 'p': tmrpcm.pause(); break;
-      case '?': if (tmrpcm.isPlaying()) {
-          Serial.println("A wav file is being played");
-        } break;
-      case 'S': tmrpcm.stopPlayback(); break;
-      case '=': tmrpcm.volume(1); break;
-      case '-': tmrpcm.volume(0); break;
-      case '0': tmrpcm.quality(0); break;
-      case '1': tmrpcm.quality(1); break;
-      default: break;
-    }
   }
 
 }
