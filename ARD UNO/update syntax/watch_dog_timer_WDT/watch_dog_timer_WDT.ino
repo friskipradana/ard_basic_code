@@ -9,16 +9,16 @@
 const byte jumlah_krupuk = 10;
 // lama delay makan krupuk dal ms
 int lama_makan_krupuk[jumlah_krupuk] = {
- 3000,
- 3500,
- 2000,
- 5500,
- 4000,
- 9000, // keselek, jadi lama
- 2000,
- 3000,
- 4000,
- 5000
+ 1000,
+ 1500,
+ 1000,
+ 1500,
+ 1000,
+ 3000, // keselek, jadi lama
+ 1000,
+ 1000,
+ 1000,
+ 1000
  };
 byte giliran = 0;
 void setup() {
@@ -33,7 +33,7 @@ void setup() {
  //
  Serial.println("==== Start Program!");
  // aktifkan wdt dg waktu tunggu 8 detik
- wdt_enable(WDTO_8S);
+ wdt_enable(WDTO_2S);
 }
 void loop() {
  // lama makan krupuk sesuai giliran

@@ -90,7 +90,7 @@
 #define NOTE_DS8 4978
 
 
-#define BUZZER_PIN 9
+#define BUZZER_PIN 3
 
 // Array with the notes in the melody (see pitches.h for reference)
 int melody[] = {NOTE_A4, NOTE_A4, NOTE_A4, NOTE_F4, NOTE_C5, NOTE_A4, NOTE_F4, NOTE_C5, NOTE_A4, NOTE_E5, NOTE_E5, NOTE_E5, NOTE_F5, NOTE_C5, NOTE_A4, NOTE_F4, NOTE_C5, NOTE_A4};

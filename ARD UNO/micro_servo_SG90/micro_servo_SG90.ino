@@ -1,5 +1,5 @@
 #include <Servo.h>
-#define Servo_Pin A1
+#define Servo_Pin 6
 Servo Myservo;
 
 
